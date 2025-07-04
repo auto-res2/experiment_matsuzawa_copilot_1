@@ -22,5 +22,38 @@
     "experimental_setup": "The LWGAN framework is validated using synthetic datasets (Swiss roll, S-curve, Hyperplane) and real image datasets (MNIST, CelebA). The performance is evaluated based on the ability to detect the correct intrinsic dimension, generate high-quality samples, and achieve small reconstruction errors. Comparison metrics include Inception Score (IS), Fréchet Inception Distance (FID), and reconstruction error.",
     "limitations": "The paper assumes the existence of a homeomorphism between the data manifold and R^r. The function space G x Q x F is assumed to be large enough to cover some optimal points of interest. The 1-Lipschitz constraint on the critic f is enforced by the gradient penalty technique, which might introduce its own limitations. The selection of the regularization parameter λ_n requires a practical and data-driven scheme.",
     "future_research_directions": "Future research directions include investigating a more general scenario where the generator G is stochastic by adding an extra noise vector to its input. Another direction is to incorporate the stochastic LWGAN into more recent GAN modules like BigGAN to produce high-resolution and high-fidelity images along with the estimation of the intrinsic dimension. The framework can also be applied to structural estimation in economics."
-  }
+  },
+  "generated_queries": [
+    "Wasserstein latent",
+    "Adaptive generative",
+    "Intrinsic dimension",
+    "WAE GAN",
+    "Gradient penalty"
+  ],
+  "add_github_urls": [
+    "https://github.com/mlvlab/SCDM"
+  ],
+  "add_method_texts": [
+    {
+      "arxiv_id": "2402.16506v3",
+      "arxiv_url": "http://arxiv.org/abs/2402.16506v3",
+      "title": "Stochastic Conditional Diffusion Models for Robust Semantic Image\n  Synthesis",
+      "authors": [
+        "Juyeon Ko",
+        "Inho Kong",
+        "Dogyun Park",
+        "Hyunwoo J. Kim"
+      ],
+      "published_date": "2024-02-26T11:41:28Z",
+      "journal": "",
+      "doi": "",
+      "summary": "Semantic image synthesis (SIS) is a task to generate realistic images\ncorresponding to semantic maps (labels). However, in real-world applications,\nSIS often encounters noisy user inputs. To address this, we propose Stochastic\nConditional Diffusion Model (SCDM), which is a robust conditional diffusion\nmodel that features novel forward and generation processes tailored for SIS\nwith noisy labels. It enhances robustness by stochastically perturbing the\nsemantic label maps through Label Diffusion, which diffuses the labels with\ndiscrete diffusion. Through the diffusion of labels, the noisy and clean\nsemantic maps become similar as the timestep increases, eventually becoming\nidentical at $t=T$. This facilitates the generation of an image close to a\nclean image, enabling robust generation. Furthermore, we propose a class-wise\nnoise schedule to differentially diffuse the labels depending on the class. We\ndemonstrate that the proposed method generates high-quality samples through\nextensive experiments and analyses on benchmark datasets, including a novel\nexperimental setup simulating human errors during real-world applications. Code\nis available at https://github.com/mlvlab/SCDM.",
+      "github_url": "https://github.com/mlvlab/SCDM",
+      "main_contributions": "The paper introduces Stochastic Conditional Diffusion Model (SCDM) for robust semantic image synthesis (SIS) with noisy labels. It proposes a novel conditional diffusion model incorporating Label Diffusion, a discrete diffusion process for labels, and provides theoretical analyses of class-wise noise schedule and the relationship between class guidances. A new SIS benchmark is introduced to assess generation performance under noisy conditions.",
+      "methodology": "SCDM uses a diffusion model with a forward process that stochastically perturbs semantic label maps through Label Diffusion, which employs discrete diffusion. A class-wise noise schedule differentially diffuses labels based on class. The generation process entails two heterogeneous diffusion processes: discrete for labels and continuous reverse for images.",
+      "experimental_setup": "The method is evaluated on benchmark datasets including ADE20K, CelebAMask-HQ, and COCO-Stuff. A new noisy SIS benchmark based on ADE20K is introduced to simulate human errors with downsampled semantic maps, edge masking, and random noise. Evaluation metrics include FID, mIoU, LPIPS, SSIM and PSNR.",
+      "limitations": "The paper mentions that the model might reinforce biases present in the training data. It also suggests a limitation related to the method's inability to dynamically learn optimal noise schedules for labels.",
+      "future_research_directions": "Future research could focus on controlling faithfulness to semantic maps and exploring dynamically learning the optimal noise schedules for labels."
+    }
+  ]
 }

@@ -65,5 +65,14 @@
   "push_completion": true,
   "experiment_session_id": "devin-36f26fbacbdf4d21a0ba73295d374485",
   "experiment_devin_url": "https://app.devin.ai/sessions/36f26fbacbdf4d21a0ba73295d374485",
-  "experiment_iteration": 1
+  "experiment_iteration": 1,
+  "output_text_data": "============================================================\nRUNNING QUICK TEST MODE\n============================================================\nUsing device: cpu\nPreparing MNIST dataset...\n\n============================================================\nEXPERIMENT 1: Stability Under Noisy Conditions\n============================================================\nTraining DRAL-WGAN with noise_std=0.2...\nBatch 0: Loss = 1.0566\nBatch 5: Loss = 0.6200\nBatch 10: Loss = 0.3404\nBatch 15: Loss = 0.2907\nTraining LWGAN with noise_std=0.2...\nBatch 0: Loss = 1.0547\nBatch 5: Loss = 0.5824\nBatch 10: Loss = 0.3360\nBatch 15: Loss = 0.2757\nTraining loss plot saved as .research/iteration1/images/training_loss.pdf\nDRAL-WGAN final loss: 0.2695\nLWGAN final loss: 0.2747\nExperiment 1 completed successfully!\n\n============================================================\nEXPERIMENT 2: Latent Space Analysis and Importance Weight Dynamics\n============================================================\nExtracting latent representations...\nPre-diffusion latents shape: (640, 128)\nPost-diffusion latents shape: (640, 128)\nLatent distribution plot saved as .research/iteration1/images/latent_distribution.pdf\nt-SNE latent space plot saved as .research/iteration1/images/tsne_latent.pdf\nPre-diffusion mean: -0.0559, std: 0.5334\nPost-diffusion mean: -0.0562, std: 0.5426\nExperiment 2 completed successfully!\n\n============================================================\nEXPERIMENT 3: Ablation Study on Latent Diffusion Process\n============================================================\nTraining full model variant...\nBatch 0: Loss = 1.0398\nBatch 5: Loss = 0.5975\nBatch 10: Loss = 0.3439\nBatch 15: Loss = 0.2892\nTraining fixed noise variant...\nBatch 0: Loss = 1.0248\nBatch 5: Loss = 0.5805\nBatch 10: Loss = 0.3398\nBatch 15: Loss = 0.2806\nTraining no diffusion variant...\nBatch 0: Loss = 1.0222\nBatch 5: Loss = 0.5961\nBatch 10: Loss = 0.3317\nBatch 15: Loss = 0.2720\nAblation study plot saved as .research/iteration1/images/ablation_loss_comparison.pdf\nFull model final loss: 0.2714\nFixed noise final loss: 0.2680\nNo diffusion final loss: 0.2674\nExperiment 3 completed successfully!\n\n============================================================\nALL EXPERIMENTS COMPLETED SUCCESSFULLY IN TEST MODE!\n============================================================\n\nGenerated PDF files:\n✓ .research/iteration1/images/training_loss.pdf\n✓ .research/iteration1/images/latent_distribution.pdf\n✓ .research/iteration1/images/tsne_latent.pdf\n✓ .research/iteration1/images/ablation_loss_comparison.pdf\n",
+  "error_text_data": "...省略...",
+  "image_file_name_list": [
+    "ablation_loss_comparison.pdf",
+    "latent_distribution.pdf",
+    "training_loss.pdf",
+    "tsne_latent.pdf"
+  ],
+  "executed_flag": true
 }

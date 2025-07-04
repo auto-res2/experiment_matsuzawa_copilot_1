@@ -8,18 +8,18 @@ Preparing MNIST dataset...
 EXPERIMENT 1: Stability Under Noisy Conditions
 ============================================================
 Training DRAL-WGAN with noise_std=0.2...
-Batch 0: Loss = 1.0298
-Batch 5: Loss = 0.5896
-Batch 10: Loss = 0.3277
-Batch 15: Loss = 0.2743
+Batch 0: Loss = 1.0566
+Batch 5: Loss = 0.6200
+Batch 10: Loss = 0.3404
+Batch 15: Loss = 0.2907
 Training LWGAN with noise_std=0.2...
-Batch 0: Loss = 1.0376
-Batch 5: Loss = 0.6051
-Batch 10: Loss = 0.3506
-Batch 15: Loss = 0.2844
+Batch 0: Loss = 1.0547
+Batch 5: Loss = 0.5824
+Batch 10: Loss = 0.3360
+Batch 15: Loss = 0.2757
 Training loss plot saved as .research/iteration1/images/training_loss.pdf
-DRAL-WGAN final loss: 0.2745
-LWGAN final loss: 0.2793
+DRAL-WGAN final loss: 0.2695
+LWGAN final loss: 0.2747
 Experiment 1 completed successfully!
 
 ============================================================
@@ -30,32 +30,32 @@ Pre-diffusion latents shape: (640, 128)
 Post-diffusion latents shape: (640, 128)
 Latent distribution plot saved as .research/iteration1/images/latent_distribution.pdf
 t-SNE latent space plot saved as .research/iteration1/images/tsne_latent.pdf
-Pre-diffusion mean: -0.0241, std: 0.5162
-Post-diffusion mean: -0.0241, std: 0.5255
+Pre-diffusion mean: -0.0559, std: 0.5334
+Post-diffusion mean: -0.0562, std: 0.5426
 Experiment 2 completed successfully!
 
 ============================================================
 EXPERIMENT 3: Ablation Study on Latent Diffusion Process
 ============================================================
 Training full model variant...
-Batch 0: Loss = 1.0388
-Batch 5: Loss = 0.6190
-Batch 10: Loss = 0.3525
-Batch 15: Loss = 0.2792
+Batch 0: Loss = 1.0398
+Batch 5: Loss = 0.5975
+Batch 10: Loss = 0.3439
+Batch 15: Loss = 0.2892
 Training fixed noise variant...
-Batch 0: Loss = 1.0176
-Batch 5: Loss = 0.5789
-Batch 10: Loss = 0.3248
-Batch 15: Loss = 0.2613
+Batch 0: Loss = 1.0248
+Batch 5: Loss = 0.5805
+Batch 10: Loss = 0.3398
+Batch 15: Loss = 0.2806
 Training no diffusion variant...
-Batch 0: Loss = 1.0270
-Batch 5: Loss = 0.5884
-Batch 10: Loss = 0.3243
-Batch 15: Loss = 0.2598
+Batch 0: Loss = 1.0222
+Batch 5: Loss = 0.5961
+Batch 10: Loss = 0.3317
+Batch 15: Loss = 0.2720
 Ablation study plot saved as .research/iteration1/images/ablation_loss_comparison.pdf
-Full model final loss: 0.2584
-Fixed noise final loss: 0.2818
-No diffusion final loss: 0.2663
+Full model final loss: 0.2714
+Fixed noise final loss: 0.2680
+No diffusion final loss: 0.2674
 Experiment 3 completed successfully!
 
 ============================================================
